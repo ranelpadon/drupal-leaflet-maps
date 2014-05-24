@@ -1,0 +1,24 @@
+<?php
+
+/*
+ * Implements hook_ckeditor_plugin().
+ */
+function leaflet_maps_ckeditor_plugin() {
+  // This will register the Leaflet Maps as a new CKEditor plugin.
+  // It would appear in the plugins list on the profile setting page:
+  // "admin/config/content/ckeditor/edit/Advanced"
+  // The 2 most important info here are the plugin path and the icon.
+  return array(
+    'leaflet' => array(
+      'name' => 'Leaflet Maps',
+      'desc' => t('Plugin for inserting Leaflet Maps.'),
+      'path' => libraries_get_path('ckeditor') . '/plugins/leaflet/',
+      'buttons' => array(
+        'leaflet' => array(
+          'label' => 'Leaflet Maps',
+          'icon' => 'icons/leaflet.png',
+        ),
+      ),
+    ),
+  );
+}

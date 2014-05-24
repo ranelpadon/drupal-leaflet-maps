@@ -1,0 +1,5 @@
+name = Leaflet Maps
+description = "Adds the Leaflet Maps in the list of available CKEditor plugins and the option to attach it on the toolbar."
+core = 7.x
+version = 7.x-1.0
+package = User interface
