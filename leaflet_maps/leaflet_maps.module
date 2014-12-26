@@ -10,7 +10,7 @@ function leaflet_maps_ckeditor_plugin() {
   // The 2 most important info here are the plugin path and the icon.
   return array(
     'leaflet' => array(
-      'name' => 'Leaflet Maps',
+      'name' => 'leaflet',
       'desc' => t('Plugin for inserting Leaflet Maps.'),
       'path' => libraries_get_path('ckeditor') . '/plugins/leaflet/',
       'buttons' => array(
